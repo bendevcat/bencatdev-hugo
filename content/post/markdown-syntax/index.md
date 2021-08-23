@@ -1,29 +1,41 @@
 +++
-author = "Hugo Authors"
-title = "Markdown Syntax Guide"
-date = "2019-03-11"
-description = "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+author = "benCat"
+title = "Here we go (again?) !"
+date = "2021-08-20"
+description = "C'est un grand jour pour moi, après des années à tergiverser, mon blog ouvre enfin ses pages :)"
 tags = [
-    "markdown",
-    "css",
-    "html",
-    "themes",
+    "devops",
+    "lifestyle",
 ]
 categories = [
-    "themes",
-    "syntax",
+    "annonce",
 ]
-series = ["Themes Guide"]
-aliases = ["migrate-from-jekyl"]
-image = "pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg"
+#series = ["Themes Guide"]
+#aliases = ["migrate-from-jekyl"]
+image = "cloud-technology-background.png"
 +++
 
-This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
+Enfin, un espace pour moi tout seul, où je vais pouvoir consigner mes pensées, mes idées, mes passions et mon savoir.
+Sûrement des bouts de ma vie, et du partage d'un peu de tout, la tech étant le point central.
 <!--more-->
 
-## Headings
+## Moi ?
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+Benoît, la trentaine bien entamée, passioné de nouvelles technologies, d'informatique en général et de geekeries en tout genre.  
+Tu en veux un peu plus ? - *ouais, on va se tutoyer, c'est plus sympa* - Bon courage, sinon rendez-vous ici. (TODO : link to 2.0)
+
+### Amour, gloire et PC
+Je suis un grand fan de SF, de musiques, de séries tv, de plantes, de chats, de sciences et d'astronomie, et même si je ne me résume pas à ça, ça couvre une bonne partie de ce qui me facine dans ce monde.  
+J'ai grandi pendant la génération Club Do', AB 1 et le BigDil, IRC et en particulier EntreCh@t (Voila/Wanadoo), des LAN en cybercafé ou dans le garage d'un pote qui avait la place, CS, WOW, Pokémon... et le Site du Zér0.  
+### From `<head>` to `</body>`
+Le premier site que j'ai écris m'a permis de partager ma passion pour les mangas et animés, en HTML/CSS/Paint. J'ai pris plaisir à voir cette page web prendre forme pour finalement aboutir à une interface pas trop dégueu avec un contenu relativement riche.  
+J'ai vite constaté les limites d'un site statique, je me suis donc naturellement dirigé vers PHP. Sisi, à l'époque, c'était naturel... J'avais mis en place un CRUD tout simple avec une petite MySQL derrière, et un peu de JavaScript pour rendre le tout visuellement plus... dynamique ?! Bref, une période de découverte riche en casse tête et en satisfaction, que j'ai malheureusement dû mettre de côté, suite à "les choses de la vie", toussa toussa.  
+### Here we go tout court
+L'entrée dans la "vie active" a été comme une énorme claque pour moi, vraiment pas prêt, vraiment pas engagé, vraiment pas motivé, je me suis perdu sur des chemins pavés d'embûches, de rencontres, d'expériences enrichissantes, de constructions et d'appréhenssions de mes pensées, de partages et de remises en questions... bonnes ou mauvaises, elles ont faits ce que je suis aujourd'hui.
+### Après la pluie...
+J'ai fini par trouver un boulot à la FNAC, ce n'était pas idéal mais au moins je pouvais mettre à contribution le savoir accumulé depuis toutes ces années dans le domaine informatique, pour conseiller Mr et Mme tous le monde ou une entreprise dans la recherche de leurs besoins, me consolider sur les sujets que je pensais acquis, et appris bien plus que je ne l'espérait.  
+Après plusieurs années dans le département informatique, j'ai eu l'opportunité de mettre en place le département téléphonie, secteur abandonné quelques années, puis réintroduit sous une autre forme : c'était l'avènement du smartphone et des forfaits sans engagement !  
+J'ai fait grandir et j'ai maintenu ce département durant 2 ans, avant de me décider à passer à autre chose.  
 
 # H1
 ## H2
