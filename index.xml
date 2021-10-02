@@ -1,51 +1,87 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>benCat.dev</title><link>https://bencat.dev/</link><description>Recent content on benCat.dev</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 25 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bencat.dev/index.xml" rel="self" type="application/rss+xml"/><item><title>Lerna avec Github Actions</title><link>https://bencat.dev/p/lerna-avec-github-actions/</link><pubDate>Wed, 25 Aug 2021 00:00:00 +0000</pubDate><guid>https://bencat.dev/p/lerna-avec-github-actions/</guid><description>&lt;img src="https://bencat.dev/p/lerna-avec-github-actions/lerna-monorepo.png" alt="Featured image of post Lerna avec Github Actions" />&lt;p>J&amp;rsquo;ai eu à mettre en place une CICD sur un monorepo Lerna.&lt;br>
-Je connaissais le principe mais je n&amp;rsquo;avais jamais eu l&amp;rsquo;occasion de bosser avec, j&amp;rsquo;ai donc forcement galéré pour arriver à remplir la checklist de mon lead-tech.&lt;/p></description></item><item><title>Here we go (again?) !</title><link>https://bencat.dev/p/here-we-go-again/</link><pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate><guid>https://bencat.dev/p/here-we-go-again/</guid><description>&lt;img src="https://bencat.dev/p/here-we-go-again/cloud-background.png" alt="Featured image of post Here we go (again?) !" />&lt;p>Enfin, un espace pour moi tout seul, où je vais pouvoir consigner mes pensées, mes idées, mes passions et mon savoir.
-Sûrement des bouts de ma vie, et du partage d&amp;rsquo;un peu de tout, la tech étant le point central.&lt;/p>
-&lt;h2 id="avant-propos">AVANT PROPOS&lt;/h2>
-&lt;p>Benoît, la trentaine bien entamée, passioné de nouvelles technologies, d&amp;rsquo;informatique en général et de geekeries en tout genre.&lt;br>
-Tu en veux un peu plus ? - &lt;em>ouais, on va se tutoyer, c&amp;rsquo;est plus sympa&lt;/em> - Bon courage, sinon rendez-vous ici. (TODO : link to 2.0)&lt;/p>
-&lt;h3 id="amour-gloire-et-pc">Amour, gloire et PC&lt;/h3>
-&lt;p>Je suis un grand fan de SF, de musiques, de séries tv, de plantes, de chats, de sciences et d&amp;rsquo;astronomie, et même si je ne me résume pas à ça, ça couvre une bonne partie de ce qui me facine dans ce monde.&lt;br>
-J&amp;rsquo;ai grandi pendant la génération Club Do', AB 1 et le BigDil, IRC et en particulier EntreCh@t (Voila/Wanadoo), des LAN en cybercafé ou dans le garage d&amp;rsquo;un pote qui avait la place, CS, WOW, Pokémon&amp;hellip; et le Site du Zér0.&lt;/p>
-&lt;h3 id="from-head-to-body">From &lt;code>&amp;lt;head&amp;gt;&lt;/code> to &lt;code>&amp;lt;/body&amp;gt;&lt;/code>&lt;/h3>
-&lt;p>Le premier site que j&amp;rsquo;ai écris m&amp;rsquo;a permis de partager ma passion pour les mangas et animés, en HTML/CSS/Paint. J&amp;rsquo;ai pris plaisir à voir cette page web prendre forme pour finalement aboutir à une interface pas trop dégueu avec un contenu relativement riche.&lt;br>
-J&amp;rsquo;ai vite constaté les limites d&amp;rsquo;un site statique, je me suis donc naturellement dirigé vers PHP. Sisi, à l&amp;rsquo;époque, c&amp;rsquo;était naturel&amp;hellip; J&amp;rsquo;avais mis en place un CRUD tout simple avec une petite MySQL derrière, et un peu de JavaScript pour rendre le tout visuellement plus&amp;hellip; dynamique ?! Bref, une période de découverte riche en casse tête et en satisfaction, que j&amp;rsquo;ai malheureusement dû mettre de côté, suite à &amp;ldquo;les choses de la vie&amp;rdquo;, toussa toussa.&lt;/p>
-&lt;h3 id="here-we-go-tout-court">Here we go tout court&lt;/h3>
-&lt;p>L&amp;rsquo;entrée dans la &amp;ldquo;vie active&amp;rdquo; a été comme une énorme claque pour moi, vraiment pas prêt, vraiment pas engagé, vraiment pas motivé, je me suis perdu sur des chemins pavés d&amp;rsquo;embûches, de rencontres, d&amp;rsquo;expériences enrichissantes, de constructions et d&amp;rsquo;appréhenssions de mes pensées, de partages et de remises en questions&amp;hellip; bonnes ou mauvaises, elles ont faits ce que je suis aujourd&amp;rsquo;hui.&lt;/p>
-&lt;h3 id="après-la-pluie">Après la pluie&amp;hellip;&lt;/h3>
-&lt;p>J&amp;rsquo;ai fini par trouver un boulot à la FNAC, ce n&amp;rsquo;était pas idéal mais au moins je pouvais mettre à contribution le savoir accumulé depuis toutes ces années dans le domaine informatique, pour conseiller Mr et Mme tous le monde ou une entreprise dans la recherche de leurs besoins, me consolider sur les sujets que je pensais acquis, et appris bien plus que je ne l&amp;rsquo;espérait.&lt;br>
-Après plusieurs années dans le département informatique, j&amp;rsquo;ai eu l&amp;rsquo;opportunité de mettre en place le département téléphonie, secteur abandonné quelques années, puis réintroduit sous une autre forme : c&amp;rsquo;était l&amp;rsquo;avènement du smartphone et des forfaits sans engagement !&lt;br>
-J&amp;rsquo;ai fait grandir et j&amp;rsquo;ai maintenu ce département durant 2 ans, avant de me décider à passer à autre chose.&lt;/p>
-&lt;hr>
-&lt;h2 id="retour-aux-sources">RETOUR AUX SOURCES&lt;/h2>
-&lt;p>Cette expérience FNAC m&amp;rsquo;a permis de renouer avec mes premières passions, vendre du matos pour finir par échanger avec les commerciaux des plus grandes marques sur les prochaines nouveautés a relancé mon envie de développer, il fallait que je repartes à zéro pour enfin faire de ma vie un terrain de jeu dans lequel je saurais me démarquer.&lt;/p>
-&lt;h3 id="réinitialisation">Réinitialisation&lt;/h3>
-&lt;p>La reconversion professionnelle, ou comment faire un bon formatage afin de repartir sur un système sain et bien plus stable.&lt;br>
-Le FONGECIF est un organisme qui permet de suivre une formation certifiante afin de faciliter cette reconversion. Bingo.&lt;br>
-Les démarches ont été longues, surtout auprès de mon entreprise. Une fois le dossier accepté, tout s&amp;rsquo;est enchainé, et j&amp;rsquo;ai pu intégrer un parcours de Concepteur Developpeur Informatique, rien qu&amp;rsquo;ça !&lt;br>
-4 mois de cours intensif, 2 mois de stage pour valider les aquis.&lt;/p>
-&lt;p>Au programme :&lt;/p>
-&lt;ul>
-&lt;li>Algo&lt;/li>
-&lt;li>HTML/CSS&lt;/li>
-&lt;li>JS&lt;/li>
-&lt;li>SQL (MySQL)&lt;/li>
-&lt;li>PHP POO puis Symfony&lt;/li>
-&lt;li>Java J2E (focus sur servlet)&lt;/li>
-&lt;li>Android&lt;/li>
-&lt;/ul>
-&lt;h3 id="crashloopbackoff">CrashLoopBackOff&lt;/h3>
-&lt;p>Remise en question&lt;/p>
-&lt;h3 id="openclassrooms">OpenClassrooms&lt;/h3>
-&lt;hr>
-&lt;h2 id="brave-new-world">BRAVE NEW WORLD&lt;/h2>
-&lt;h3 id="sixense-digital">Sixense Digital&lt;/h3>
-&lt;hr>
-&lt;h2 id="dev-hops-">DEV-HOPS !&lt;/h2>
-&lt;h3 id="faire-un-pont-pour-de-bon">Faire un pont, pour de bon&lt;/h3>
-&lt;p>Le lien interservice&lt;/p>
-&lt;h3 id="canal-de-suez">Canal de Suez&lt;/h3>
-&lt;h3 id="chef-dorchestre">Chef d&amp;rsquo;orchestre&lt;/h3>
-&lt;hr>
-&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted --></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>benCat.dev</title>
+        <link>https://bencat.dev/</link>
+        <description>Recent content on benCat.dev</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 25 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bencat.dev/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Lerna avec Github Actions</title>
+        <link>https://bencat.dev/p/lerna-avec-github-actions/</link>
+        <pubDate>Wed, 25 Aug 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://bencat.dev/p/lerna-avec-github-actions/</guid>
+        <description>&lt;img src="https://bencat.dev/p/lerna-avec-github-actions/lerna-monorepo.png" alt="Featured image of post Lerna avec Github Actions" /&gt;&lt;p&gt;J&amp;rsquo;ai eu à mettre en place une CICD sur un monorepo Lerna.&lt;br&gt;
+Je connaissais le principe mais je n&amp;rsquo;avais jamais eu l&amp;rsquo;occasion de bosser avec, j&amp;rsquo;ai donc forcement galéré pour arriver à remplir la checklist de mon lead-tech.&lt;/p&gt;
+&lt;h2 id=&#34;la-checklist&#34;&gt;LA CHECKLIST&lt;/h2&gt;
+&lt;p&gt;Voici les pré-requis pour ce poc :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lerna doit fonctionner en mode &amp;lsquo;independent&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;La gestion des versions doit donc être indépendante&lt;/li&gt;
+&lt;li&gt;Un changelog paramétrable doit être généré à chaque build&lt;/li&gt;
+&lt;li&gt;Un pull d&amp;rsquo;un repo NPM privé doit être possible&lt;/li&gt;
+&lt;li&gt;Tout merge sur master doit publier la/les librairie/s sur Github Package et NPM&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Here we go (again?) !</title>
+        <link>https://bencat.dev/p/here-we-go-again/</link>
+        <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://bencat.dev/p/here-we-go-again/</guid>
+        <description>&lt;img src="https://bencat.dev/p/here-we-go-again/cloud-background.png" alt="Featured image of post Here we go (again?) !" /&gt;&lt;p&gt;Enfin, un espace pour moi tout seul, où je vais pouvoir consigner mes pensées, mes idées, mes passions et mon savoir.
+Sûrement des bouts de ma vie, et du partage d&amp;rsquo;un peu de tout, la tech étant le point central.&lt;/p&gt;
+&lt;h2 id=&#34;avant-propos&#34;&gt;AVANT PROPOS&lt;/h2&gt;
+&lt;p&gt;Benoît, la trentaine bien entamée, passioné de nouvelles technologies, d&amp;rsquo;informatique en général et de geekeries en tout genre.&lt;br&gt;
+Tu en veux un peu plus ? - &lt;em&gt;ouais, on va se tutoyer, c&amp;rsquo;est plus sympa&lt;/em&gt; - Bon courage, sinon rendez-vous ici. (TODO : link to 2.0)&lt;/p&gt;
+&lt;h3 id=&#34;amour-gloire-et-pc&#34;&gt;Amour, gloire et PC&lt;/h3&gt;
+&lt;p&gt;Je suis un grand fan de SF, de musiques, de séries tv, de plantes, de chats, de sciences et d&amp;rsquo;astronomie, et même si je ne me résume pas à ça, ça couvre une bonne partie de ce qui me facine dans ce monde.&lt;br&gt;
+J&amp;rsquo;ai grandi pendant la génération Club Do&#39;, AB 1 et le BigDil, IRC et en particulier EntreCh@t (Voila/Wanadoo), des LAN en cybercafé ou dans le garage d&amp;rsquo;un pote qui avait la place, CS, WOW, Pokémon&amp;hellip; et le Site du Zér0.&lt;/p&gt;
+&lt;h3 id=&#34;from-head-to-body&#34;&gt;From &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; to &lt;code&gt;&amp;lt;/body&amp;gt;&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Le premier site que j&amp;rsquo;ai écris m&amp;rsquo;a permis de partager ma passion pour les mangas et animés, en HTML/CSS/Paint. J&amp;rsquo;ai pris plaisir à voir cette page web prendre forme pour finalement aboutir à une interface pas trop dégueu avec un contenu relativement riche.&lt;br&gt;
+J&amp;rsquo;ai vite constaté les limites d&amp;rsquo;un site statique, je me suis donc naturellement dirigé vers PHP. Sisi, à l&amp;rsquo;époque, c&amp;rsquo;était naturel&amp;hellip; J&amp;rsquo;avais mis en place un CRUD tout simple avec une petite MySQL derrière, et un peu de JavaScript pour rendre le tout visuellement plus&amp;hellip; dynamique ?! Bref, une période de découverte riche en casse tête et en satisfaction, que j&amp;rsquo;ai malheureusement dû mettre de côté, suite à &amp;ldquo;les choses de la vie&amp;rdquo;, toussa toussa.&lt;/p&gt;
+&lt;h3 id=&#34;here-we-go-tout-court&#34;&gt;Here we go tout court&lt;/h3&gt;
+&lt;p&gt;L&amp;rsquo;entrée dans la &amp;ldquo;vie active&amp;rdquo; a été comme une énorme claque pour moi, vraiment pas prêt, vraiment pas engagé, vraiment pas motivé, je me suis perdu sur des chemins pavés d&amp;rsquo;embûches, de rencontres, d&amp;rsquo;expériences enrichissantes, de constructions et d&amp;rsquo;appréhenssions de mes pensées, de partages et de remises en questions&amp;hellip; bonnes ou mauvaises, elles ont faits ce que je suis aujourd&amp;rsquo;hui.&lt;/p&gt;
+&lt;h3 id=&#34;après-la-pluie&#34;&gt;Après la pluie&amp;hellip;&lt;/h3&gt;
+&lt;p&gt;J&amp;rsquo;ai fini par trouver un boulot à la FNAC, ce n&amp;rsquo;était pas idéal mais au moins je pouvais mettre à contribution le savoir accumulé depuis toutes ces années dans le domaine informatique, pour conseiller Mr et Mme tous le monde ou une entreprise dans la recherche de leurs besoins, me consolider sur les sujets que je pensais acquis, et appris bien plus que je ne l&amp;rsquo;espérait.&lt;br&gt;
+Après plusieurs années dans le département informatique, j&amp;rsquo;ai eu l&amp;rsquo;opportunité de mettre en place le département téléphonie, secteur abandonné quelques années, puis réintroduit sous une autre forme : c&amp;rsquo;était l&amp;rsquo;avènement du smartphone et des forfaits sans engagement !&lt;br&gt;
+J&amp;rsquo;ai fait grandir et j&amp;rsquo;ai maintenu ce département durant 2 ans, avant de me décider à passer à autre chose.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;retour-aux-sources&#34;&gt;RETOUR AUX SOURCES&lt;/h2&gt;
+&lt;p&gt;Cette expérience FNAC m&amp;rsquo;a permis de renouer avec mes premières passions, vendre du matos pour finir par échanger avec les commerciaux des plus grandes marques sur les prochaines nouveautés a relancé mon envie de développer, il fallait que je repartes à zéro pour enfin faire de ma vie un terrain de jeu dans lequel je saurais me démarquer.&lt;/p&gt;
+&lt;h3 id=&#34;réinitialisation&#34;&gt;Réinitialisation&lt;/h3&gt;
+&lt;p&gt;La reconversion professionnelle, ou comment faire un bon formatage afin de repartir sur un système sain et bien plus stable.&lt;br&gt;
+Le FONGECIF est un organisme qui permet de suivre une formation certifiante afin de faciliter cette reconversion. Bingo.&lt;br&gt;
+Les démarches ont été longues, surtout auprès de mon entreprise. Une fois le dossier accepté, tout s&amp;rsquo;est enchainé, et j&amp;rsquo;ai pu intégrer un parcours de Concepteur Developpeur Informatique, rien qu&amp;rsquo;ça !&lt;br&gt;
+4 mois de cours intensif, 2 mois de stage pour valider les aquis.&lt;/p&gt;
+&lt;p&gt;Au programme :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Algo&lt;/li&gt;
+&lt;li&gt;HTML/CSS&lt;/li&gt;
+&lt;li&gt;JS&lt;/li&gt;
+&lt;li&gt;SQL (MySQL)&lt;/li&gt;
+&lt;li&gt;PHP POO puis Symfony&lt;/li&gt;
+&lt;li&gt;Java J2E (focus sur servlet)&lt;/li&gt;
+&lt;li&gt;Android&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;crashloopbackoff&#34;&gt;CrashLoopBackOff&lt;/h3&gt;
+&lt;p&gt;Remise en question&lt;/p&gt;
+&lt;h3 id=&#34;openclassrooms&#34;&gt;OpenClassrooms&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;brave-new-world&#34;&gt;BRAVE NEW WORLD&lt;/h2&gt;
+&lt;h3 id=&#34;sixense-digital&#34;&gt;Sixense Digital&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;dev-hops-&#34;&gt;DEV-HOPS !&lt;/h2&gt;
+&lt;h3 id=&#34;faire-un-pont-pour-de-bon&#34;&gt;Faire un pont, pour de bon&lt;/h3&gt;
+&lt;p&gt;Le lien interservice&lt;/p&gt;
+&lt;h3 id=&#34;canal-de-suez&#34;&gt;Canal de Suez&lt;/h3&gt;
+&lt;h3 id=&#34;chef-dorchestre&#34;&gt;Chef d&amp;rsquo;orchestre&lt;/h3&gt;
+&lt;hr&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
