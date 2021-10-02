@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>annonce on benCat.dev</title>
+    <link>https://bencat.dev/categories/annonce/</link>
+    <description>Recent content in annonce on benCat.dev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bencat.dev/categories/annonce/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Here we go (again?) !</title>
+      <link>https://bencat.dev/p/here-we-go-again/</link>
+      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bencat.dev/p/here-we-go-again/</guid>
+      <description>&lt;p&gt;Enfin, un espace pour moi tout seul, où je vais pouvoir consigner mes pensées, mes idées, mes passions et mon savoir.
+Sûrement des bouts de ma vie, et du partage d&amp;rsquo;un peu de tout, la tech étant le point central.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
