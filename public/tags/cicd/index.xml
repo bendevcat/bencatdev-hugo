@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cicd on benCat.dev</title>
+    <link>https://bencat.dev/tags/cicd/</link>
+    <description>Recent content in cicd on benCat.dev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 25 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bencat.dev/tags/cicd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lerna avec Github Actions</title>
+      <link>https://bencat.dev/p/lerna-avec-github-actions/</link>
+      <pubDate>Wed, 25 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bencat.dev/p/lerna-avec-github-actions/</guid>
+      <description>J&amp;rsquo;ai eu à mettre en place une CICD sur un monorepo Lerna.
+Je connaissais le principe mais je n&amp;rsquo;avais jamais eu l&amp;rsquo;occasion de bosser avec, j&amp;rsquo;ai donc forcement galéré pour arriver à remplir la checklist de mon lead-tech.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -12,18 +12,17 @@ categories = [
 ]
 #series = ["Themes Guide"]
 #aliases = ["migrate-from-jekyl"]
-image = "cloud-technology-background.png"
+image = "cloud-background.png"
 +++
 
 Enfin, un espace pour moi tout seul, où je vais pouvoir consigner mes pensées, mes idées, mes passions et mon savoir.
 Sûrement des bouts de ma vie, et du partage d'un peu de tout, la tech étant le point central.
 <!--more-->
 
-## Moi ?
+## AVANT PROPOS
 
 Benoît, la trentaine bien entamée, passioné de nouvelles technologies, d'informatique en général et de geekeries en tout genre.  
-Tu en veux un peu plus ? - *ouais, on va se tutoyer, c'est plus sympa* - Bon courage, sinon rendez-vous ici. (TODO : link to 2.0)
-
+Tu en veux un peu plus ? - *ouais, on va se tutoyer, c'est plus sympa* - Bon courage, sinon rendez-vous ici. (TODO : link to 2.0)  
 ### Amour, gloire et PC
 Je suis un grand fan de SF, de musiques, de séries tv, de plantes, de chats, de sciences et d'astronomie, et même si je ne me résume pas à ça, ça couvre une bonne partie de ce qui me facine dans ce monde.  
 J'ai grandi pendant la génération Club Do', AB 1 et le BigDil, IRC et en particulier EntreCh@t (Voila/Wanadoo), des LAN en cybercafé ou dans le garage d'un pote qui avait la place, CS, WOW, Pokémon... et le Site du Zér0.  
@@ -31,19 +30,75 @@ J'ai grandi pendant la génération Club Do', AB 1 et le BigDil, IRC et en parti
 Le premier site que j'ai écris m'a permis de partager ma passion pour les mangas et animés, en HTML/CSS/Paint. J'ai pris plaisir à voir cette page web prendre forme pour finalement aboutir à une interface pas trop dégueu avec un contenu relativement riche.  
 J'ai vite constaté les limites d'un site statique, je me suis donc naturellement dirigé vers PHP. Sisi, à l'époque, c'était naturel... J'avais mis en place un CRUD tout simple avec une petite MySQL derrière, et un peu de JavaScript pour rendre le tout visuellement plus... dynamique ?! Bref, une période de découverte riche en casse tête et en satisfaction, que j'ai malheureusement dû mettre de côté, suite à "les choses de la vie", toussa toussa.  
 ### Here we go tout court
-L'entrée dans la "vie active" a été comme une énorme claque pour moi, vraiment pas prêt, vraiment pas engagé, vraiment pas motivé, je me suis perdu sur des chemins pavés d'embûches, de rencontres, d'expériences enrichissantes, de constructions et d'appréhenssions de mes pensées, de partages et de remises en questions... bonnes ou mauvaises, elles ont faits ce que je suis aujourd'hui.
+L'entrée dans la "vie active" a été comme une énorme claque pour moi, vraiment pas prêt, vraiment pas engagé, vraiment pas motivé, je me suis perdu sur des chemins pavés d'embûches, de rencontres, d'expériences enrichissantes, de constructions et d'appréhenssions de mes pensées, de partages et de remises en questions... bonnes ou mauvaises, elles ont faits ce que je suis aujourd'hui.  
 ### Après la pluie...
 J'ai fini par trouver un boulot à la FNAC, ce n'était pas idéal mais au moins je pouvais mettre à contribution le savoir accumulé depuis toutes ces années dans le domaine informatique, pour conseiller Mr et Mme tous le monde ou une entreprise dans la recherche de leurs besoins, me consolider sur les sujets que je pensais acquis, et appris bien plus que je ne l'espérait.  
 Après plusieurs années dans le département informatique, j'ai eu l'opportunité de mettre en place le département téléphonie, secteur abandonné quelques années, puis réintroduit sous une autre forme : c'était l'avènement du smartphone et des forfaits sans engagement !  
 J'ai fait grandir et j'ai maintenu ce département durant 2 ans, avant de me décider à passer à autre chose.  
 
-# H1
-## H2
-### H3
-#### H4
-##### H5
-###### H6
+---
 
+## RETOUR AUX SOURCES
+Cette expérience FNAC m'a permis de renouer avec mes premières passions, vendre du matos pour finir par échanger avec les commerciaux des plus grandes marques sur les prochaines nouveautés a relancé mon envie de développer, il fallait que je repartes à zéro pour enfin faire de ma vie un terrain de jeu dans lequel je saurais me démarquer. 
+
+### Réinitialisation
+La reconversion professionnelle, ou comment faire un bon formatage afin de repartir sur un système sain et bien plus stable.  
+Le FONGECIF est un organisme qui permet de suivre une formation certifiante afin de faciliter cette reconversion. Bingo.  
+Les démarches ont été longues, surtout auprès de mon entreprise. Une fois le dossier accepté, tout s'est enchainé, et j'ai pu intégrer un parcours de Concepteur Developpeur Informatique, rien qu'ça !  
+4 mois de cours intensif, 2 mois de stage pour valider les aquis.  
+
+Au programme : 
+- Algo
+- HTML/CSS
+- JS
+- SQL (MySQL)
+- PHP POO puis Symfony
+- Java J2E (focus sur servlet)
+- Android
+
+### CrashLoopBackOff
+Remise en question
+
+### OpenClassrooms
+
+---
+
+## BRAVE NEW WORLD
+
+### Sixense Digital
+
+---
+
+## DEV-HOPS !
+
+### Faire un pont, pour de bon
+Le lien interservice
+
+### Canal de Suez
+
+### Chef d'orchestre
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
 ## Paragraph
 
 Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
@@ -160,3 +215,4 @@ X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
 
 Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+-->
