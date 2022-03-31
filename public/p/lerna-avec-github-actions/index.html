@@ -3,20 +3,20 @@
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Comment mettre en place une CICD avec Actions sur un monorepo Lerna &#39;independent&#39;'><title>Lerna avec Github Actions</title>
 
-<link rel='canonical' href='https://bencat.dev/p/lerna-avec-github-actions/'>
+<link rel='canonical' href='https://www.bencat.dev/p/lerna-avec-github-actions/'>
 
 <link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Lerna avec Github Actions'>
 <meta property='og:description' content='Comment mettre en place une CICD avec Actions sur un monorepo Lerna &#39;independent&#39;'>
-<meta property='og:url' content='https://bencat.dev/p/lerna-avec-github-actions/'>
+<meta property='og:url' content='https://www.bencat.dev/p/lerna-avec-github-actions/'>
 <meta property='og:site_name' content='benCat.dev'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='devops' /><meta property='article:tag' content='cicd' /><meta property='article:tag' content='actions' /><meta property='article:published_time' content='2021-08-25T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-08-25T00:00:00&#43;00:00'/><meta property='og:image' content='https://bencat.dev/p/lerna-avec-github-actions/lerna-monorepo.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='devops' /><meta property='article:tag' content='cicd' /><meta property='article:tag' content='actions' /><meta property='article:published_time' content='2021-08-25T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-08-25T00:00:00&#43;00:00'/><meta property='og:image' content='https://www.bencat.dev/p/lerna-avec-github-actions/lerna-monorepo.png' />
 <meta name="twitter:site" content="@bendevcat">
     <meta name="twitter:creator" content="@bendevcat"><meta name="twitter:title" content="Lerna avec Github Actions">
 <meta name="twitter:description" content="Comment mettre en place une CICD avec Actions sur un monorepo Lerna &#39;independent&#39;"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://bencat.dev/p/lerna-avec-github-actions/lerna-monorepo.png' />
+    <meta name="twitter:image" content='https://www.bencat.dev/p/lerna-avec-github-actions/lerna-monorepo.png' />
     </head>
     <body class="
-    article-page 
+    article-page
 ">
     <script>
         (function() {
@@ -32,7 +32,7 @@
         const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
 
         if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
-            
+
 
             document.documentElement.dataset.scheme = 'dark';
         } else {
@@ -40,12 +40,12 @@
         }
     })();
 </script>
-<div class="container main-container flex 
-    
+<div class="container main-container flex
+
         on-phone--column extended
-    
+
 ">
-    
+
         <aside class="sidebar left-sidebar sticky">
     <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Afficher le menu">
         <span class="hamburger-box">
@@ -54,35 +54,35 @@
     </button>
 
     <header class="site-info">
-        
-            
+
+
             <figure class="site-avatar">
-                
-                    
-                    
-                    
-                        
+
+
+
+
+
                         <img src="/img/bencat-linkedin-avatar_hu5e19e6475f211158ebff8cd092eaa43d_4621_300x0_resize_q75_box.jpeg" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
-                    
-                
 
-                
+
+
+
             </figure>
-            
-        
-        <h1 class="site-name"><a href="https://bencat.dev">benCat.dev</a></h1>
+
+
+        <h1 class="site-name"><a href="https://www.bencat.dev">benCat.dev</a></h1>
         <h2 class="site-description">DevOps by fortuity.</h2>
     </header>
 
     <ol class="menu" id="main-menu">
-        
-        
-        
+
+
+
 
         <li >
             <a href='/' target="_blank">
-                
+
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <polyline points="5 12 3 12 12 3 21 12 19 12" />
@@ -92,16 +92,16 @@
 
 
 
-                
+
                 <span>Home</span>
             </a>
         </li>
-        
-        
+
+
 
         <li >
             <a href='/archives' target="_blank">
-                
+
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <polyline points="5 12 3 12 12 3 21 12 19 12" />
@@ -111,16 +111,16 @@
 
 
 
-                
+
                 <span>MyTest</span>
             </a>
         </li>
-        
-        
+
+
 
         <li >
             <a href='/about/' >
-                
+
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="12" cy="7" r="4" />
@@ -129,16 +129,16 @@
 
 
 
-                
+
                 <span>About</span>
             </a>
         </li>
-        
-        
+
+
 
         <li >
             <a href='/archives/' >
-                
+
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <rect x="3" y="4" width="18" height="4" rx="2" />
@@ -148,16 +148,16 @@
 
 
 
-                
+
                 <span>Archives</span>
             </a>
         </li>
-        
-        
+
+
 
         <li >
             <a href='/search/' >
-                
+
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="10" cy="10" r="7" />
@@ -166,13 +166,13 @@
 
 
 
-                
+
                 <span>Search</span>
             </a>
         </li>
-        
 
-        
+
+
             <li id="dark-mode-toggle">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
@@ -192,11 +192,11 @@
 
                 <span>Mode sombre</span>
             </li>
-        
+
     </ol>
 </aside>
 
-    
+
 <main class="main full-width">
     <article class="has-image main-article">
     <header class="article-header">
@@ -204,39 +204,39 @@
             <a href="/p/lerna-avec-github-actions/">
                 <img src="/p/lerna-avec-github-actions/lerna-monorepo_hue68868ea82a028f341997e866d18ad8a_503943_800x0_resize_box_3.png"
                         srcset="/p/lerna-avec-github-actions/lerna-monorepo_hue68868ea82a028f341997e866d18ad8a_503943_800x0_resize_box_3.png 800w, /p/lerna-avec-github-actions/lerna-monorepo_hue68868ea82a028f341997e866d18ad8a_503943_1600x0_resize_box_3.png 1600w"
-                        width="800" 
-                        height="270" 
+                        width="800"
+                        height="270"
                         loading="lazy"
                         alt="Featured image of post Lerna avec Github Actions" />
-                
+
             </a>
         </div>
-    
+
 
     <div class="article-details">
-    
+
     <header class="article-category">
-        
+
             <a href="/categories/tutoriel/" >
                 tutoriel
             </a>
-        
+
     </header>
-    
+
 
     <h2 class="article-title">
         <a href="/p/lerna-avec-github-actions/">Lerna avec Github Actions</a>
     </h2>
 
-    
+
     <h3 class="article-subtitle">
         Comment mettre en place une CICD avec Actions sur un monorepo Lerna &#39;independent&#39;
     </h3>
-    
 
-    
+
+
     <footer class="article-time">
-        
+
             <div>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
@@ -249,9 +249,9 @@
 </svg>
                 <time class="article-time--published">Aug 25, 2021</time>
             </div>
-        
 
-        
+
+
             <div>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
@@ -265,9 +265,9 @@
                     1 min read
                 </time>
             </div>
-        
+
     </footer>
-    
+
 </div>
 </header>
 
@@ -279,41 +279,41 @@ Je connaissais le principe mais je n&rsquo;avais jamais eu l&rsquo;occasion de b
 
 
     <footer class="article-footer">
-    
+
     <section class="article-tags">
-        
+
             <a href="/tags/devops/">devops</a>
-        
+
             <a href="/tags/cicd/">cicd</a>
-        
+
             <a href="/tags/actions/">actions</a>
-        
+
     </section>
 
 
     </footer>
 
 
-    
+
 </article>
 
     <aside class="related-contents--wrapper">
-    
-    
+
+
 </aside>
 
-     
-     
-        
-    
+
+
+
+
 
     <footer class="site-footer">
     <section class="copyright">
-        &copy; 
-        
+        &copy;
+
         2021 benCat.dev
     </section>
-    
+
     <section class="powerby">
         Généré avec <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
         Thème <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.1.0">Stack</a></b> conçu par <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
@@ -321,28 +321,28 @@ Je connaissais le principe mais je n&rsquo;avais jamais eu l&rsquo;occasion de b
 </footer>
 
 
-    
+
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
-    
+
     <div class="pswp__bg"></div>
 
-    
+
     <div class="pswp__scroll-wrap">
 
-        
+
         <div class="pswp__container">
             <div class="pswp__item"></div>
             <div class="pswp__item"></div>
             <div class="pswp__item"></div>
         </div>
 
-        
+
         <div class="pswp__ui pswp__ui--hidden">
 
             <div class="pswp__top-bar">
 
-                
+
 
                 <div class="pswp__counter"></div>
 
@@ -354,8 +354,8 @@ Je connaissais le principe mais je n&rsquo;avais jamais eu l&rsquo;occasion de b
 
                 <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
 
-                
-                
+
+
                 <div class="pswp__preloader">
                     <div class="pswp__preloader__icn">
                         <div class="pswp__preloader__cut">
@@ -383,27 +383,27 @@ Je connaissais le principe mais je n&rsquo;avais jamais eu l&rsquo;occasion de b
 
     </div>
 
-</div><script 
+</div><script
                 src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
                 defer="true"
                 >
-            </script><script 
+            </script><script
                 src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
                 defer="true"
                 >
-            </script><link 
-                rel="stylesheet" 
+            </script><link
+                rel="stylesheet"
                 href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
-            ><link 
-                rel="stylesheet" 
+            ><link
+                rel="stylesheet"
                 href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
             >
 
             </main>
-    
+
 
         </div>
-        <script 
+        <script
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
                 defer="false"
                 >
