@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Ou comment remettre de l&#39;ordre dans ton conteneur !'><title>Docker: Gestion du PID1</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Ou comment remettre de l&#39;ordre dans ton conteneur !'><title>Docker: Gestion du PID 1 avec Tini</title>
 
-<link rel='canonical' href='https://www.bencat.dev/p/docker-gestion-du-pid1/'>
+<link rel='canonical' href='https://www.bencat.dev/p/docker-gestion-du-pid-1-avec-tini/'>
 
-<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Docker: Gestion du PID1'>
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Docker: Gestion du PID 1 avec Tini'>
 <meta property='og:description' content='Ou comment remettre de l&#39;ordre dans ton conteneur !'>
-<meta property='og:url' content='https://www.bencat.dev/p/docker-gestion-du-pid1/'>
+<meta property='og:url' content='https://www.bencat.dev/p/docker-gestion-du-pid-1-avec-tini/'>
 <meta property='og:site_name' content='benCat.dev'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='docker' /><meta property='article:published_time' content='2021-08-20T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-08-20T00:00:00&#43;00:00'/><meta property='og:image' content='https://www.bencat.dev/p/docker-gestion-du-pid1/cloud-background.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='docker' /><meta property='article:published_time' content='2021-08-20T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-08-20T00:00:00&#43;00:00'/><meta property='og:image' content='https://www.bencat.dev/p/docker-gestion-du-pid-1-avec-tini/cloud-background.png' />
 <meta name="twitter:site" content="@bendevcat">
-    <meta name="twitter:creator" content="@bendevcat"><meta name="twitter:title" content="Docker: Gestion du PID1">
+    <meta name="twitter:creator" content="@bendevcat"><meta name="twitter:title" content="Docker: Gestion du PID 1 avec Tini">
 <meta name="twitter:description" content="Ou comment remettre de l&#39;ordre dans ton conteneur !"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://www.bencat.dev/p/docker-gestion-du-pid1/cloud-background.png' />
+    <meta name="twitter:image" content='https://www.bencat.dev/p/docker-gestion-du-pid-1-avec-tini/cloud-background.png' />
     </head>
     <body class="
     article-page 
@@ -201,13 +201,13 @@
     <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
-            <a href="/p/docker-gestion-du-pid1/">
-                <img src="/p/docker-gestion-du-pid1/cloud-background_hue4a1a79457676405d5bcede5ee777322_2022523_800x0_resize_box_3.png"
-                        srcset="/p/docker-gestion-du-pid1/cloud-background_hue4a1a79457676405d5bcede5ee777322_2022523_800x0_resize_box_3.png 800w, /p/docker-gestion-du-pid1/cloud-background_hue4a1a79457676405d5bcede5ee777322_2022523_1600x0_resize_box_3.png 1600w"
+            <a href="/p/docker-gestion-du-pid-1-avec-tini/">
+                <img src="/p/docker-gestion-du-pid-1-avec-tini/cloud-background_hue4a1a79457676405d5bcede5ee777322_2022523_800x0_resize_box_3.png"
+                        srcset="/p/docker-gestion-du-pid-1-avec-tini/cloud-background_hue4a1a79457676405d5bcede5ee777322_2022523_800x0_resize_box_3.png 800w, /p/docker-gestion-du-pid-1-avec-tini/cloud-background_hue4a1a79457676405d5bcede5ee777322_2022523_1600x0_resize_box_3.png 1600w"
                         width="800" 
                         height="139" 
                         loading="lazy"
-                        alt="Featured image of post Docker: Gestion du PID1" />
+                        alt="Featured image of post Docker: Gestion du PID 1 avec Tini" />
                 
             </a>
         </div>
@@ -225,7 +225,7 @@
     
 
     <h2 class="article-title">
-        <a href="/p/docker-gestion-du-pid1/">Docker: Gestion du PID1</a>
+        <a href="/p/docker-gestion-du-pid-1-avec-tini/">Docker: Gestion du PID 1 avec Tini</a>
     </h2>
 
     
@@ -272,8 +272,13 @@
 </header>
 
     <section class="article-content">
-    <h1 id="test-">TEST !</h1>
-<p>Just a test</p>
+    <h1 id="un-peu-dhistoire">UN PEU D&rsquo;HISTOIRE</h1>
+<p>Dans des temps oubliés, le déploiement d&rsquo;une application finissait irrémédiablement sur un serveur (physique ou virtuel).
+Lors du lancement de votre instance, l&rsquo;OS créer un nouveau processus, et lui attribue un numéro de PID (Process IDentifier) unique afin de pouvoir identifier ce processus par la suite.</p>
+<p>Le premier processus lancé se voit attribuer le PID numéro 1, les prochains se retrouvent incrémentés.</p>
+<p>Sous Linux, le PID 1 n&rsquo;est autre que le processus &ldquo;init&rdquo;, qui sert à initialiser le système.</p>
+<h1 id="the-docker-way">THE DOCKER WAY</h1>
+<p>Lors du lancement d&rsquo;un conteneur Docker, celui-ci</p>
 
 </section>
 

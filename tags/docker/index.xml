@@ -8,12 +8,14 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 20 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.bencat.dev/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Docker: Gestion du PID1</title>
-      <link>https://www.bencat.dev/p/docker-gestion-du-pid1/</link>
+      <title>Docker: Gestion du PID 1 avec Tini</title>
+      <link>https://www.bencat.dev/p/docker-gestion-du-pid-1-avec-tini/</link>
       <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bencat.dev/p/docker-gestion-du-pid1/</guid>
-      <description>TEST ! Just a test</description>
+      <guid>https://www.bencat.dev/p/docker-gestion-du-pid-1-avec-tini/</guid>
+      <description>UN PEU D&amp;rsquo;HISTOIRE Dans des temps oubliés, le déploiement d&amp;rsquo;une application finissait irrémédiablement sur un serveur (physique ou virtuel). Lors du lancement de votre instance, l&amp;rsquo;OS créer un nouveau processus, et lui attribue un numéro de PID (Process IDentifier) unique afin de pouvoir identifier ce processus par la suite.
+Le premier processus lancé se voit attribuer le PID numéro 1, les prochains se retrouvent incrémentés.
+Sous Linux, le PID 1 n&amp;rsquo;est autre que le processus &amp;ldquo;init&amp;rdquo;, qui sert à initialiser le système.</description>
     </item>
     
   </channel>

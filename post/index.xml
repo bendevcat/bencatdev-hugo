@@ -8,18 +8,30 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 20 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.bencat.dev/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Docker: Gestion du PID1</title>
-      <link>https://www.bencat.dev/p/docker-gestion-du-pid1/</link>
+      <title>Docker: Gestion du PID 1 avec Tini</title>
+      <link>https://www.bencat.dev/p/docker-gestion-du-pid-1-avec-tini/</link>
       <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.bencat.dev/p/docker-gestion-du-pid1/</guid>
-      <description>TEST ! Just a test</description>
+      <guid>https://www.bencat.dev/p/docker-gestion-du-pid-1-avec-tini/</guid>
+      <description>UN PEU D&amp;rsquo;HISTOIRE Dans des temps oubliés, le déploiement d&amp;rsquo;une application finissait irrémédiablement sur un serveur (physique ou virtuel). Lors du lancement de votre instance, l&amp;rsquo;OS créer un nouveau processus, et lui attribue un numéro de PID (Process IDentifier) unique afin de pouvoir identifier ce processus par la suite.
+Le premier processus lancé se voit attribuer le PID numéro 1, les prochains se retrouvent incrémentés.
+Sous Linux, le PID 1 n&amp;rsquo;est autre que le processus &amp;ldquo;init&amp;rdquo;, qui sert à initialiser le système.</description>
     </item>
     
     <item>
       <title>Here we go (again?) !</title>
       <link>https://www.bencat.dev/p/here-we-go-again/</link>
       <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bencat.dev/p/here-we-go-again/</guid>
+      <description>&lt;p&gt;Enfin, un espace pour moi tout seul, où je vais pouvoir consigner mes pensées, mes idées, mes passions et mon savoir.
+Sûrement des bouts de ma vie, et du partage d&amp;rsquo;un peu de tout, la tech étant le point central.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Here we go (again?) !&#34;</title>
+      <link>https://www.bencat.dev/p/here-we-go-again/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.bencat.dev/p/here-we-go-again/</guid>
       <description>&lt;p&gt;Enfin, un espace pour moi tout seul, où je vais pouvoir consigner mes pensées, mes idées, mes passions et mon savoir.

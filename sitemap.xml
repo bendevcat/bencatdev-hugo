@@ -20,7 +20,7 @@
     <loc>https://www.bencat.dev/tags/docker/</loc>
     <lastmod>2021-08-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.bencat.dev/p/docker-gestion-du-pid1/</loc>
+    <loc>https://www.bencat.dev/p/docker-gestion-du-pid-1-avec-tini/</loc>
     <lastmod>2021-08-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.bencat.dev/p/here-we-go-again/</loc>
@@ -43,6 +43,8 @@
   </url><url>
     <loc>https://www.bencat.dev/about/</loc>
     <lastmod>2020-10-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.bencat.dev/p/here-we-go-again/</loc>
   </url><url>
     <loc>https://www.bencat.dev/search/</loc>
   </url>
