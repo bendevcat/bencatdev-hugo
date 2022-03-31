@@ -11,6 +11,7 @@ categories = [
     "Docker",
 ]
 image = "cloud-background.png"
+slug = "docker"
 +++
 
 # TEST !
