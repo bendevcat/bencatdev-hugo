@@ -8,7 +8,6 @@ tags:
 categories:
   - "DevOps"
 image: "cloud-background.png"
-slug: "docker"
 ---
 
 # TEST !
