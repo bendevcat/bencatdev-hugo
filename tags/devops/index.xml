@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>devops on benCat.dev</title>
-    <link>https://bencat.dev/tags/devops/</link>
+    <link>https://www.bencat.dev/tags/devops/</link>
     <description>Recent content in devops on benCat.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bencat.dev/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.bencat.dev/tags/devops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lerna avec Github Actions</title>
-      <link>https://bencat.dev/p/lerna-avec-github-actions/</link>
+      <link>https://www.bencat.dev/p/lerna-avec-github-actions/</link>
       <pubDate>Wed, 25 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bencat.dev/p/lerna-avec-github-actions/</guid>
+      <guid>https://www.bencat.dev/p/lerna-avec-github-actions/</guid>
       <description>J&amp;rsquo;ai eu à mettre en place une CICD sur un monorepo Lerna.
 Je connaissais le principe mais je n&amp;rsquo;avais jamais eu l&amp;rsquo;occasion de bosser avec, j&amp;rsquo;ai donc forcement galéré pour arriver à remplir la checklist de mon lead-tech.
 LA CHECKLIST Voici les pré-requis pour ce poc :
@@ -21,10 +21,10 @@ LA CHECKLIST Voici les pré-requis pour ce poc :
     
     <item>
       <title>Here we go (again?) !</title>
-      <link>https://bencat.dev/p/here-we-go-again/</link>
+      <link>https://www.bencat.dev/p/here-we-go-again/</link>
       <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bencat.dev/p/here-we-go-again/</guid>
+      <guid>https://www.bencat.dev/p/here-we-go-again/</guid>
       <description>&lt;p&gt;Enfin, un espace pour moi tout seul, où je vais pouvoir consigner mes pensées, mes idées, mes passions et mon savoir.
 Sûrement des bouts de ma vie, et du partage d&amp;rsquo;un peu de tout, la tech étant le point central.&lt;/p&gt;</description>
     </item>
