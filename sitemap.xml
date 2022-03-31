@@ -11,10 +11,10 @@
     <loc>https://www.bencat.dev/categories/</loc>
     <lastmod>2021-08-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.bencat.dev/tags/devops/</loc>
+    <loc>https://www.bencat.dev/categories/devops/</loc>
     <lastmod>2021-08-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.bencat.dev/categories/docker/</loc>
+    <loc>https://www.bencat.dev/tags/devops/</loc>
     <lastmod>2021-08-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.bencat.dev/tags/docker/</loc>
@@ -43,8 +43,6 @@
   </url><url>
     <loc>https://www.bencat.dev/about/</loc>
     <lastmod>2020-10-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.bencat.dev/categories/devops/</loc>
   </url><url>
     <loc>https://www.bencat.dev/search/</loc>
   </url>
