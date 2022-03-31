@@ -2,53 +2,53 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://bendevcat.github.io/bencatdev-hugo/tags/actions/</loc>
+    <loc>https://bencat.dev/tags/actions/</loc>
     <lastmod>2021-08-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://bendevcat.github.io/bencatdev-hugo/</loc>
+    <loc>https://bencat.dev/</loc>
     <lastmod>2021-08-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://bendevcat.github.io/bencatdev-hugo/categories/</loc>
+    <loc>https://bencat.dev/categories/</loc>
     <lastmod>2021-08-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://bendevcat.github.io/bencatdev-hugo/tags/cicd/</loc>
+    <loc>https://bencat.dev/tags/cicd/</loc>
     <lastmod>2021-08-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://bendevcat.github.io/bencatdev-hugo/tags/devops/</loc>
+    <loc>https://bencat.dev/tags/devops/</loc>
     <lastmod>2021-08-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://bendevcat.github.io/bencatdev-hugo/p/lerna-avec-github-actions/</loc>
+    <loc>https://bencat.dev/p/lerna-avec-github-actions/</loc>
     <lastmod>2021-08-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://bendevcat.github.io/bencatdev-hugo/post/</loc>
+    <loc>https://bencat.dev/post/</loc>
     <lastmod>2021-08-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://bendevcat.github.io/bencatdev-hugo/tags/</loc>
+    <loc>https://bencat.dev/tags/</loc>
     <lastmod>2021-08-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://bendevcat.github.io/bencatdev-hugo/categories/tutoriel/</loc>
+    <loc>https://bencat.dev/categories/tutoriel/</loc>
     <lastmod>2021-08-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://bendevcat.github.io/bencatdev-hugo/categories/annonce/</loc>
+    <loc>https://bencat.dev/categories/annonce/</loc>
     <lastmod>2021-08-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://bendevcat.github.io/bencatdev-hugo/p/here-we-go-again/</loc>
+    <loc>https://bencat.dev/p/here-we-go-again/</loc>
     <lastmod>2021-08-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://bendevcat.github.io/bencatdev-hugo/tags/lifestyle/</loc>
+    <loc>https://bencat.dev/tags/lifestyle/</loc>
     <lastmod>2021-08-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://bendevcat.github.io/bencatdev-hugo/archives/</loc>
+    <loc>https://bencat.dev/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://bendevcat.github.io/bencatdev-hugo/page/</loc>
+    <loc>https://bencat.dev/page/</loc>
     <lastmod>2020-10-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://bendevcat.github.io/bencatdev-hugo/about/</loc>
+    <loc>https://bencat.dev/about/</loc>
     <lastmod>2020-10-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://bendevcat.github.io/bencatdev-hugo/search/</loc>
+    <loc>https://bencat.dev/search/</loc>
   </url><url>
-    <loc>https://bendevcat.github.io/bencatdev-hugo/categories/test/</loc>
+    <loc>https://bencat.dev/categories/test/</loc>
   </url>
 </urlset>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>actions on benCat.dev</title>
-    <link>https://bendevcat.github.io/bencatdev-hugo/tags/actions/</link>
+    <link>https://bencat.dev/tags/actions/</link>
     <description>Recent content in actions on benCat.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bendevcat.github.io/bencatdev-hugo/tags/actions/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bencat.dev/tags/actions/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lerna avec Github Actions</title>
-      <link>https://bendevcat.github.io/bencatdev-hugo/p/lerna-avec-github-actions/</link>
+      <link>https://bencat.dev/p/lerna-avec-github-actions/</link>
       <pubDate>Wed, 25 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bendevcat.github.io/bencatdev-hugo/p/lerna-avec-github-actions/</guid>
+      <guid>https://bencat.dev/p/lerna-avec-github-actions/</guid>
       <description>J&amp;rsquo;ai eu à mettre en place une CICD sur un monorepo Lerna.
 Je connaissais le principe mais je n&amp;rsquo;avais jamais eu l&amp;rsquo;occasion de bosser avec, j&amp;rsquo;ai donc forcement galéré pour arriver à remplir la checklist de mon lead-tech.
 LA CHECKLIST Voici les pré-requis pour ce poc :

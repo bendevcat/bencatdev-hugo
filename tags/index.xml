@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on benCat.dev</title>
-    <link>https://bendevcat.github.io/bencatdev-hugo/tags/</link>
+    <link>https://bencat.dev/tags/</link>
     <description>Recent content in Tags on benCat.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bendevcat.github.io/bencatdev-hugo/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bencat.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>actions</title>
-      <link>https://bendevcat.github.io/bencatdev-hugo/tags/actions/</link>
+      <link>https://bencat.dev/tags/actions/</link>
       <pubDate>Wed, 25 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bendevcat.github.io/bencatdev-hugo/tags/actions/</guid>
+      <guid>https://bencat.dev/tags/actions/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cicd</title>
-      <link>https://bendevcat.github.io/bencatdev-hugo/tags/cicd/</link>
+      <link>https://bencat.dev/tags/cicd/</link>
       <pubDate>Wed, 25 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bendevcat.github.io/bencatdev-hugo/tags/cicd/</guid>
+      <guid>https://bencat.dev/tags/cicd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>devops</title>
-      <link>https://bendevcat.github.io/bencatdev-hugo/tags/devops/</link>
+      <link>https://bencat.dev/tags/devops/</link>
       <pubDate>Wed, 25 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bendevcat.github.io/bencatdev-hugo/tags/devops/</guid>
+      <guid>https://bencat.dev/tags/devops/</guid>
       <description></description>
     </item>
     
     <item>
       <title>lifestyle</title>
-      <link>https://bendevcat.github.io/bencatdev-hugo/tags/lifestyle/</link>
+      <link>https://bencat.dev/tags/lifestyle/</link>
       <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bendevcat.github.io/bencatdev-hugo/tags/lifestyle/</guid>
+      <guid>https://bencat.dev/tags/lifestyle/</guid>
       <description></description>
     </item>
     
