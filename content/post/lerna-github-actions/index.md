@@ -1,5 +1,5 @@
 +++
-draft: true
+draft: "true"
 author = "benCat"
 title = "Lerna avec Github Actions"
 date = "2021-08-25"
