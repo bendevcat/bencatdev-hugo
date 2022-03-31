@@ -2,40 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.bencat.dev/tags/actions/</loc>
-    <lastmod>2021-08-25T00:00:00+00:00</lastmod>
+    <loc>https://www.bencat.dev/categories/annonce/</loc>
+    <lastmod>2021-08-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.bencat.dev/</loc>
-    <lastmod>2021-08-25T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.bencat.dev/categories/</loc>
-    <lastmod>2021-08-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.bencat.dev/tags/cicd/</loc>
-    <lastmod>2021-08-25T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.bencat.dev/tags/devops/</loc>
-    <lastmod>2021-08-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.bencat.dev/p/lerna-avec-github-actions/</loc>
-    <lastmod>2021-08-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.bencat.dev/post/</loc>
-    <lastmod>2021-08-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.bencat.dev/tags/</loc>
-    <lastmod>2021-08-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.bencat.dev/categories/tutoriel/</loc>
-    <lastmod>2021-08-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.bencat.dev/categories/annonce/</loc>
     <lastmod>2021-08-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.bencat.dev/p/here-we-go-again/</loc>
     <lastmod>2021-08-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.bencat.dev/tags/lifestyle/</loc>
+    <lastmod>2021-08-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.bencat.dev/post/</loc>
+    <lastmod>2021-08-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.bencat.dev/tags/</loc>
     <lastmod>2021-08-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.bencat.dev/archives/</loc>
