@@ -1,4 +1,4 @@
-baseurl: https://bendevcat.github.io/bencatdev-hugo/
+baseurl: https://bencat.dev
 languageCode: en-us
 theme: hugo-theme-stack
 paginate: 5
