@@ -165,7 +165,7 @@ menu:
         - identifier: devops
           name: DevOps
           url: /categories/devops/
-          weight: -100
+          weight: -200
           pre: infinity
           params:
               newTab: false
