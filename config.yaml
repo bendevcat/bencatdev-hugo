@@ -159,20 +159,17 @@ menu:
           name: Home
           url: /
           weight: -100
-          params:
-              icon: home
+          pre: home
         - identifier: devops
           name: DevOps
           url: /categories/devops/
           weight: -99
-          params:
-              icon: infinity
+          pre: infinity
         - identifier: culture
           name: Culture
           url: /categories/culture/
           weight: -98
-          params:
-              icon: hash
+          pre: hash
 
 related:
     includeNewer: true
