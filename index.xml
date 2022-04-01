@@ -18,7 +18,27 @@ Lors du lancement de votre instance, l&amp;rsquo;OS créer un nouveau processus,
 &lt;p&gt;Le premier processus lancé se voit attribuer le PID numéro 1, les prochains se retrouvent incrémentés.&lt;/p&gt;
 &lt;p&gt;Sous Linux, le PID 1 n&amp;rsquo;est autre que le processus &amp;ldquo;init&amp;rdquo;, qui sert à initialiser le système.&lt;/p&gt;
 &lt;h1 id=&#34;the-docker-way&#34;&gt;THE DOCKER WAY&lt;/h1&gt;
-&lt;p&gt;Lors du lancement d&amp;rsquo;un conteneur Docker, celui-ci&lt;/p&gt;
+&lt;p&gt;Lors du lancement d&amp;rsquo;un conteneur Docker, celui-ci utilise l&amp;rsquo;ENTRYPOINT ou la CMD finale de l&amp;rsquo;image, en tant que PID 1.&lt;/p&gt;
+&lt;p&gt;Par exemple, si je créé un conteneur à partir d&amp;rsquo;un Dockerfile qui lance une application Node avec &amp;lsquo;CMD [&amp;ldquo;npm&amp;rdquo;, &amp;ldquo;start&amp;rdquo;]&amp;rsquo;, le PID 1 sera attribué à &amp;lsquo;npm&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;Ce qui pose quelques problèmes : La gestion des &amp;lsquo;child processes&amp;rsquo; n&amp;rsquo;est pas intégrée, des zombies peuvent apparaître (pour X raisons), les signaux envoyés par votre application (comme SIGTERM) ne seront plus interprétés&amp;hellip; bref, le conteneur devient bordélique, et il ne reste plus qu&amp;rsquo;à le reboot pour repartir sur une base saine, qui finira elle aussi par partir en vrille.&lt;/p&gt;
+&lt;h1 id=&#34;tini---a-tiny-but-valid-init-for-containers&#34;&gt;TINI - A TINY BUT VALID INIT FOR CONTAINERS&lt;/h1&gt;
+&lt;p&gt;C&amp;rsquo;est là que Tini entre en jeu : il va s&amp;rsquo;occuper de votre PID 1 et faire tout ce qu&amp;rsquo;un init sait faire !&lt;/p&gt;
+&lt;p&gt;Fini les zombies, fini les signaux non reçu, bonjour les conteneurs sains !&lt;/p&gt;
+&lt;h2 id=&#34;utilisation&#34;&gt;UTILISATION&lt;/h2&gt;
+&lt;p&gt;C&amp;rsquo;est aussi simple que d&amp;rsquo;ajouter ceci dans votre Dockerfile :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-dockerfile&#34; data-lang=&#34;dockerfile&#34;&gt;&lt;span class=&#34;k&#34;&gt;ENV&lt;/span&gt; TINI_VERSION v0.19.0&lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;ADD&lt;/span&gt; https://github.com/krallin/tini/releases/download/&lt;span class=&#34;si&#34;&gt;${&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;TINI_VERSION&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;/tini /tini&lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;RUN&lt;/span&gt; chmod +x /tini&lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;ENTRYPOINT&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;/tini&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;--&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;CMD&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;npm&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;start&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;et c&amp;rsquo;est tout !
+Aucun autre changement n&amp;rsquo;est requis : si votre conteneur démarre correctement sans Tini, il en sera de même avec ;)&lt;/p&gt;
+&lt;h2 id=&#34;va-chercher-bonheur&#34;&gt;VA CHERCHER BONHEUR&lt;/h2&gt;
+&lt;p&gt;Voici un lien vers le repo du projet : &lt;a class=&#34;link&#34; href=&#34;https://github.com/krallin/tini&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/krallin/tini&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Le README est bien fourni, vous trouverez tous les détails dont vous avez besoin pour le mettre en place !&lt;/p&gt;
 </description>
         </item>
         <item>

@@ -22,7 +22,7 @@
 
     </head>
     <body class="
-    article-page 
+    article-page has-toc
 ">
     <script>
         (function() {
@@ -48,160 +48,22 @@
 </script>
 <div class="container main-container flex 
     
-        on-phone--column extended
+        extended
     
 ">
     
-        <aside class="sidebar left-sidebar sticky">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Afficher le menu">
-        <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-        </span>
-    </button>
-
-    <header class="site-info">
-        
-            
-            <figure class="site-avatar">
-                
-                    
-                    
-                    
-                        
-                        <img src="/img/bencat-linkedin-avatar_hu5e19e6475f211158ebff8cd092eaa43d_4621_300x0_resize_q75_box.jpeg" width="300"
-                            height="300" class="site-logo" loading="lazy" alt="Avatar">
-                    
-                
-
-                
-            </figure>
-            
-        
-        <h1 class="site-name"><a href="https://www.bencat.dev">benCat.dev</a></h1>
-        <h2 class="site-description">DevOps by fortuity.</h2>
-    </header>
-
-    <ol class="menu" id="main-menu">
-        
-        
-        
-
-        <li >
-            <a href='/' target="_blank">
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <div id="article-toolbar">
+            <a href="https://www.bencat.dev" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
-  <polyline points="5 12 3 12 12 3 21 12 19 12" />
-  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
-  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+  <polyline points="15 6 9 12 15 18" />
 </svg>
 
 
 
-                
-                <span>Home</span>
+                <span>Retour</span>
             </a>
-        </li>
-        
-        
-
-        <li >
-            <a href='/archives' target="_blank">
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <polyline points="5 12 3 12 12 3 21 12 19 12" />
-  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
-  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
-</svg>
-
-
-
-                
-                <span>MyTest</span>
-            </a>
-        </li>
-        
-        
-
-        <li >
-            <a href='/about/' >
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="7" r="4" />
-  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-</svg>
-
-
-
-                
-                <span>About</span>
-            </a>
-        </li>
-        
-        
-
-        <li >
-            <a href='/archives/' >
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <rect x="3" y="4" width="18" height="4" rx="2" />
-  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
-  <line x1="10" y1="12" x2="14" y2="12" />
-</svg>
-
-
-
-                
-                <span>Archives</span>
-            </a>
-        </li>
-        
-        
-
-        <li >
-            <a href='/search/' >
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="21" y1="21" x2="15" y2="15" />
-</svg>
-
-
-
-                
-                <span>Search</span>
-            </a>
-        </li>
-        
-
-        
-            <li id="dark-mode-toggle">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="8" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="16" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                <span>Mode sombre</span>
-            </li>
-        
-    </ol>
-</aside>
-
+        </div>
     
 <main class="main full-width">
     <article class="has-image main-article">
@@ -268,7 +130,7 @@
 
 
                 <time class="article-time--reading">
-                    1 min read
+                    2 min read
                 </time>
             </div>
         
@@ -284,7 +146,27 @@ Lors du lancement de votre instance, l&rsquo;OS créer un nouveau processus, et 
 <p>Le premier processus lancé se voit attribuer le PID numéro 1, les prochains se retrouvent incrémentés.</p>
 <p>Sous Linux, le PID 1 n&rsquo;est autre que le processus &ldquo;init&rdquo;, qui sert à initialiser le système.</p>
 <h1 id="the-docker-way">THE DOCKER WAY</h1>
-<p>Lors du lancement d&rsquo;un conteneur Docker, celui-ci</p>
+<p>Lors du lancement d&rsquo;un conteneur Docker, celui-ci utilise l&rsquo;ENTRYPOINT ou la CMD finale de l&rsquo;image, en tant que PID 1.</p>
+<p>Par exemple, si je créé un conteneur à partir d&rsquo;un Dockerfile qui lance une application Node avec &lsquo;CMD [&ldquo;npm&rdquo;, &ldquo;start&rdquo;]&rsquo;, le PID 1 sera attribué à &lsquo;npm&rsquo;.</p>
+<p>Ce qui pose quelques problèmes : La gestion des &lsquo;child processes&rsquo; n&rsquo;est pas intégrée, des zombies peuvent apparaître (pour X raisons), les signaux envoyés par votre application (comme SIGTERM) ne seront plus interprétés&hellip; bref, le conteneur devient bordélique, et il ne reste plus qu&rsquo;à le reboot pour repartir sur une base saine, qui finira elle aussi par partir en vrille.</p>
+<h1 id="tini---a-tiny-but-valid-init-for-containers">TINI - A TINY BUT VALID INIT FOR CONTAINERS</h1>
+<p>C&rsquo;est là que Tini entre en jeu : il va s&rsquo;occuper de votre PID 1 et faire tout ce qu&rsquo;un init sait faire !</p>
+<p>Fini les zombies, fini les signaux non reçu, bonjour les conteneurs sains !</p>
+<h2 id="utilisation">UTILISATION</h2>
+<p>C&rsquo;est aussi simple que d&rsquo;ajouter ceci dans votre Dockerfile :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dockerfile" data-lang="dockerfile"><span class="k">ENV</span> TINI_VERSION v0.19.0<span class="err">
+</span><span class="err"></span><span class="k">ADD</span> https://github.com/krallin/tini/releases/download/<span class="si">${</span><span class="nv">TINI_VERSION</span><span class="si">}</span>/tini /tini<span class="err">
+</span><span class="err"></span><span class="k">RUN</span> chmod +x /tini<span class="err">
+</span><span class="err">
+</span><span class="err"></span><span class="k">ENTRYPOINT</span> <span class="p">[</span><span class="s2">&#34;/tini&#34;</span><span class="p">,</span> <span class="s2">&#34;--&#34;</span><span class="p">]</span><span class="err">
+</span><span class="err">
+</span><span class="err"></span><span class="k">CMD</span> <span class="p">[</span><span class="s2">&#34;npm&#34;</span><span class="p">,</span> <span class="s2">&#34;start&#34;</span><span class="p">]</span><span class="err">
+</span></code></pre></div><p>et c&rsquo;est tout !
+Aucun autre changement n&rsquo;est requis : si votre conteneur démarre correctement sans Tini, il en sera de même avec ;)</p>
+<h2 id="va-chercher-bonheur">VA CHERCHER BONHEUR</h2>
+<p>Voici un lien vers le repo du projet : <a class="link" href="https://github.com/krallin/tini"  target="_blank" rel="noopener"
+    >https://github.com/krallin/tini</a></p>
+<p>Le README est bien fourni, vous trouverez tous les détails dont vous avez besoin pour le mettre en place !</p>
 
 </section>
 
@@ -409,6 +291,33 @@ Lors du lancement de votre instance, l&rsquo;OS créer un nouveau processus, et 
             >
 
             </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">Table des matières</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#utilisation">UTILISATION</a></li>
+    <li><a href="#va-chercher-bonheur">VA CHERCHER BONHEUR</a></li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
     
 
         </div>
