@@ -1,7 +1,7 @@
 ---
 author: "benCat"
 title: "Docker: Gestion du PID 1 avec Tini"
-date: "2021-08-20"
+date: "2022-03-31"
 description: "Ou comment remettre de l'ordre dans ton conteneur !"
 tags:
   - "docker"
