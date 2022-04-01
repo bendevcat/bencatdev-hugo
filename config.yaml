@@ -161,16 +161,14 @@ menu:
           weight: -100
           pre: home
           params:
-              ### For demonstration purpose, the home link will be open in a new tab
               newTab: true
-        - identifier: mytest
-          name: MyTest
-          url: /archives
+        - identifier: devops
+          name: DevOps
+          url: /categories/devops/
           weight: -100
-          pre: home
+          pre: infinity
           params:
-              ### For demonstration purpose, the home link will be open in a new tab
-              newTab: true
+              newTab: false
 
 related:
     includeNewer: true
