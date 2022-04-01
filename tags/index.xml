@@ -6,22 +6,22 @@
     <description>Recent content in Tags on benCat.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.bencat.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 31 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.bencat.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>docker</title>
+      <link>https://www.bencat.dev/tags/docker/</link>
+      <pubDate>Thu, 31 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bencat.dev/tags/docker/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>devops</title>
       <link>https://www.bencat.dev/tags/devops/</link>
       <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.bencat.dev/tags/devops/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>docker</title>
-      <link>https://www.bencat.dev/tags/docker/</link>
-      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.bencat.dev/tags/docker/</guid>
       <description></description>
     </item>
     
