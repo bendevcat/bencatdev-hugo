@@ -6,7 +6,19 @@
     <description>Recent content in DevOps on benCat.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 31 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.bencat.dev/categories/devops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.bencat.dev/categories/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Créer une CI/CD complète avec Github Actions</title>
+      <link>https://www.bencat.dev/p/cr%C3%A9er-une-ci/cd-compl%C3%A8te-avec-github-actions/</link>
+      <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.bencat.dev/p/cr%C3%A9er-une-ci/cd-compl%C3%A8te-avec-github-actions/</guid>
+      <description>LE BUT POURQUOI GITHUB ACTIONS ? Un besoin de monter une nouvelle CI pour remplacer Jenkins X v2, qui devenait très instable et déprécié, rapidement.
+Mon entreprise à une souscription Github qui nous &amp;ldquo;offre&amp;rdquo; 50 000 minutes sur Actions, un petit POC s&amp;rsquo;est donc imposé.
+POURQUOI FAIRE ? L&amp;rsquo;objectif était simple :
+ Faire tourner lint + tu Construire l&amp;rsquo;image Docker La pousser sur un registry  2 heures plus tard, mon POC faisait le job !</description>
+    </item>
+    
     <item>
       <title>Docker: Gestion du PID 1 avec Tini</title>
       <link>https://www.bencat.dev/p/docker-gestion-du-pid-1-avec-tini/</link>
