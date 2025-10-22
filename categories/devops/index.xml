@@ -1,34 +1,113 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>DevOps on benCat.dev</title>
-    <link>https://www.bencat.dev/categories/devops/</link>
-    <description>Recent content in DevOps on benCat.dev</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 01 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.bencat.dev/categories/devops/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Créer une CI/CD complète avec Github Actions</title>
-      <link>https://www.bencat.dev/p/cr%C3%A9er-une-ci/cd-compl%C3%A8te-avec-github-actions/</link>
-      <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.bencat.dev/p/cr%C3%A9er-une-ci/cd-compl%C3%A8te-avec-github-actions/</guid>
-      <description>LE BUT POURQUOI GITHUB ACTIONS ? Un besoin de monter une nouvelle CI pour remplacer Jenkins X v2, qui devenait très instable et déprécié, rapidement.
-Mon entreprise à une souscription Github qui nous &amp;ldquo;offre&amp;rdquo; 50 000 minutes sur Actions, un petit POC s&amp;rsquo;est donc imposé.
-POURQUOI FAIRE ? L&amp;rsquo;objectif était simple :
- Faire tourner lint + tu Construire l&amp;rsquo;image Docker La pousser sur un registry  2 heures plus tard, mon POC faisait le job !</description>
-    </item>
-    
-    <item>
-      <title>Docker: Gestion du PID 1 avec Tini</title>
-      <link>https://www.bencat.dev/p/docker-gestion-du-pid-1-avec-tini/</link>
-      <pubDate>Thu, 31 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.bencat.dev/p/docker-gestion-du-pid-1-avec-tini/</guid>
-      <description>UN PEU D&amp;rsquo;HISTOIRE Dans des temps oubliés, le déploiement d&amp;rsquo;une application finissait irrémédiablement sur un serveur (physique ou virtuel). Lors du lancement de votre instance, l&amp;rsquo;OS créer un nouveau processus, et lui attribue un numéro de PID (Process IDentifier) unique afin de pouvoir identifier ce processus par la suite.
-Le premier processus lancé se voit attribuer le PID numéro 1, les prochains se retrouvent incrémentés.
-Sous Linux, le PID 1 n&amp;rsquo;est autre que le processus &amp;ldquo;init&amp;rdquo;, qui sert à initialiser le système.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DevOps on benCat.dev</title><link>https://www.bencat.dev/categories/devops/</link><description>Recent content in DevOps on benCat.dev</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 01 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.bencat.dev/categories/devops/index.xml" rel="self" type="application/rss+xml"/><item><title>Créer une CI/CD complète avec Github Actions</title><link>https://www.bencat.dev/p/cr%C3%A9er-une-ci/cd-compl%C3%A8te-avec-github-actions/</link><pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate><guid>https://www.bencat.dev/p/cr%C3%A9er-une-ci/cd-compl%C3%A8te-avec-github-actions/</guid><description>&lt;img src="https://www.bencat.dev/p/cr%C3%A9er-une-ci/cd-compl%C3%A8te-avec-github-actions/cloud-background.png" alt="Featured image of post Créer une CI/CD complète avec Github Actions" /&gt;&lt;h1 id="le-but"&gt;LE BUT&lt;/h1&gt;
+&lt;h2 id="pourquoi-github-actions-"&gt;POURQUOI GITHUB ACTIONS ?&lt;/h2&gt;
+&lt;p&gt;Un besoin de monter une nouvelle CI pour remplacer Jenkins X v2, qui devenait très instable et déprécié, rapidement.&lt;/p&gt;
+&lt;p&gt;Mon entreprise à une souscription Github qui nous &amp;ldquo;offre&amp;rdquo; 50 000 minutes sur Actions, un petit POC s&amp;rsquo;est donc imposé.&lt;/p&gt;
+&lt;h2 id="pourquoi-faire-"&gt;POURQUOI FAIRE ?&lt;/h2&gt;
+&lt;p&gt;L&amp;rsquo;objectif était simple :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Faire tourner lint + tu&lt;/li&gt;
+&lt;li&gt;Construire l&amp;rsquo;image Docker&lt;/li&gt;
+&lt;li&gt;La pousser sur un registry&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2 heures plus tard, mon POC faisait le job !&lt;/p&gt;
+&lt;p&gt;Alors bien sûr, c&amp;rsquo;était crade, les actions étaient prises un peu au hasard, mais mes besoins étaient remplis, je pouvais donc passer à la suite.&lt;/p&gt;
+&lt;h2 id="cest-tout-"&gt;C&amp;rsquo;EST TOUT ?&lt;/h2&gt;
+&lt;p&gt;Mais avant ça, pourquoi ne pas pousser le concept un peu plus loin, avec une CD ?&lt;/p&gt;
+&lt;p&gt;Mes besoins, dans les grandes lignes :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Récupérer les infos du build&lt;/li&gt;
+&lt;li&gt;Mettre à jour le chart Helm du service&lt;/li&gt;
+&lt;li&gt;Déployer le chart sur un cluster Kubernetes&lt;/li&gt;
+&lt;li&gt;Envoyer une notification Teams pour rendre compte de l&amp;rsquo;update&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;C&amp;rsquo;est à ce moment là que j&amp;rsquo;ai posé le stylo et que j&amp;rsquo;ai bouffé la documentation d&amp;rsquo;Actions.&lt;/p&gt;
+&lt;h1 id="la-pratique"&gt;LA PRATIQUE&lt;/h1&gt;
+&lt;h2 id="hello-world"&gt;HELLO-WORLD&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;en cours de rédaction&lt;/p&gt;&lt;/blockquote&gt;</description></item><item><title>Docker: Gestion du PID 1 avec Tini</title><link>https://www.bencat.dev/p/docker-gestion-du-pid-1-avec-tini/</link><pubDate>Thu, 31 Mar 2022 00:00:00 +0000</pubDate><guid>https://www.bencat.dev/p/docker-gestion-du-pid-1-avec-tini/</guid><description>&lt;img src="https://www.bencat.dev/p/docker-gestion-du-pid-1-avec-tini/cloud-background.png" alt="Featured image of post Docker: Gestion du PID 1 avec Tini" /&gt;&lt;h1 id="un-peu-dhistoire"&gt;UN PEU D&amp;rsquo;HISTOIRE&lt;/h1&gt;
+&lt;p&gt;Dans des temps oubliés, le déploiement d&amp;rsquo;une application finissait irrémédiablement sur un serveur (physique ou virtuel).
+Lors du lancement de votre instance, l&amp;rsquo;OS créer un nouveau processus, et lui attribue un numéro de PID (Process IDentifier) unique afin de pouvoir identifier ce processus par la suite.&lt;/p&gt;
+&lt;p&gt;Le premier processus lancé se voit attribuer le PID numéro 1, les prochains se retrouvent incrémentés.&lt;/p&gt;
+&lt;p&gt;Sous Linux, le PID 1 n&amp;rsquo;est autre que le processus &amp;ldquo;init&amp;rdquo;, qui sert à initialiser le système.&lt;/p&gt;
+&lt;h1 id="the-docker-way"&gt;THE DOCKER WAY&lt;/h1&gt;
+&lt;p&gt;Lors du lancement d&amp;rsquo;un conteneur Docker, celui-ci utilise l&amp;rsquo;ENTRYPOINT ou la CMD finale de l&amp;rsquo;image, en tant que PID 1.&lt;/p&gt;
+&lt;p&gt;Par exemple, si je créé un conteneur à partir d&amp;rsquo;un Dockerfile qui lance une application Node avec &amp;lsquo;CMD [&amp;ldquo;npm&amp;rdquo;, &amp;ldquo;start&amp;rdquo;]&amp;rsquo;, le PID 1 sera attribué à &amp;rsquo;npm&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;Ce qui pose quelques problèmes : La gestion des &amp;lsquo;child processes&amp;rsquo; n&amp;rsquo;est pas intégrée, des zombies peuvent apparaître (pour X raisons), les signaux envoyés par votre application (comme SIGTERM) ne seront plus interprétés&amp;hellip; bref, le conteneur devient bordélique, et il ne reste plus qu&amp;rsquo;à le reboot pour repartir sur une base saine, qui finira elle aussi par partir en vrille.&lt;/p&gt;
+&lt;h1 id="tini---a-tiny-but-valid-init-for-containers"&gt;TINI - A TINY BUT VALID INIT FOR CONTAINERS&lt;/h1&gt;
+&lt;p&gt;C&amp;rsquo;est là que Tini entre en jeu : il va s&amp;rsquo;occuper de votre PID 1 et faire tout ce qu&amp;rsquo;un init sait faire !&lt;/p&gt;
+&lt;p&gt;Fini les zombies, fini les signaux non reçu, bonjour les conteneurs sains !&lt;/p&gt;
+&lt;h2 id="utilisation"&gt;UTILISATION&lt;/h2&gt;
+&lt;p&gt;C&amp;rsquo;est aussi simple que d&amp;rsquo;ajouter ceci dans votre Dockerfile :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;span class="lnt"&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-dockerfile" data-lang="dockerfile"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;ENV&lt;/span&gt; TINI_VERSION v0.19.0&lt;span class="err"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;&lt;/span&gt;&lt;span class="k"&gt;ADD&lt;/span&gt; https://github.com/krallin/tini/releases/download/&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;TINI_VERSION&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/tini /tini&lt;span class="err"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;&lt;/span&gt;&lt;span class="k"&gt;RUN&lt;/span&gt; chmod +x /tini&lt;span class="err"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;&lt;/span&gt;&lt;span class="k"&gt;ENTRYPOINT&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;/tini&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;--&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;&lt;/span&gt;&lt;span class="k"&gt;CMD&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;npm&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;start&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;et c&amp;rsquo;est tout !
+Aucun autre changement n&amp;rsquo;est requis : si votre conteneur démarre correctement sans Tini, il en sera de même avec ;)&lt;/p&gt;
+&lt;h2 id="va-chercher-bonheur"&gt;VA CHERCHER BONHEUR&lt;/h2&gt;
+&lt;p&gt;Voici un lien vers le repo du projet : &lt;a class="link" href="https://github.com/krallin/tini" target="_blank" rel="noopener"
+&gt;https://github.com/krallin/tini&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Le README est bien fourni, vous trouverez tous les détails dont vous avez besoin pour le mettre en place !&lt;/p&gt;</description></item><item><title>Here we go (again?) !</title><link>https://www.bencat.dev/p/here-we-go-again/</link><pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate><guid>https://www.bencat.dev/p/here-we-go-again/</guid><description>&lt;img src="https://www.bencat.dev/p/here-we-go-again/cloud-background.png" alt="Featured image of post Here we go (again?) !" /&gt;&lt;p&gt;Enfin, un espace pour moi tout seul, où je vais pouvoir consigner mes pensées, mes idées, mes passions et mon savoir.
+Sûrement des bouts de ma vie, et du partage d&amp;rsquo;un peu de tout, la tech étant le point central.&lt;/p&gt;
+&lt;h2 id="avant-propos"&gt;AVANT PROPOS&lt;/h2&gt;
+&lt;p&gt;Benoît, la trentaine bien entamée, passionné de nouvelles technologies, d&amp;rsquo;informatique en général et de geekeries en tout genre.
+Tu en veux un peu plus ? - &lt;em&gt;ouais, on va se tutoyer, c&amp;rsquo;est plus sympa&lt;/em&gt; - Bon courage, sinon rendez-vous ici. (TODO : link to 2.0)&lt;/p&gt;
+&lt;h3 id="amour-gloire-et-pc"&gt;Amour, gloire et PC&lt;/h3&gt;
+&lt;p&gt;Je suis un grand fan de SF, de musiques, de séries tv, de plantes, de chats, de sciences et d&amp;rsquo;astronomie, et même si je ne me résume pas à ça, ça couvre une bonne partie de ce qui me fascine dans ce monde.
+J&amp;rsquo;ai grandi pendant la génération Club Do&amp;rsquo;, AB 1 et le BigDil, IRC et en particulier EntreCh@t (Voila/Wanadoo), des LAN en cybercafé ou dans le garage d&amp;rsquo;un pote qui avait la place, CS, WOW, Pokémon&amp;hellip; et le Site du Zér0.&lt;/p&gt;
+&lt;h3 id="from-head-to-body"&gt;From &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; to &lt;code&gt;&amp;lt;/body&amp;gt;&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Le premier site que j&amp;rsquo;ai écris m&amp;rsquo;a permis de partager ma passion pour les mangas et animés, en HTML/CSS/Paint. J&amp;rsquo;ai pris plaisir à voir cette page web prendre forme pour finalement aboutir à une interface pas trop dégueu avec un contenu relativement riche.
+J&amp;rsquo;ai vite constaté les limites d&amp;rsquo;un site statique, je me suis donc naturellement dirigé vers PHP. Sisi, à l&amp;rsquo;époque, c&amp;rsquo;était naturel&amp;hellip; J&amp;rsquo;avais mis en place un CRUD tout simple avec une petite MySQL derrière, et un peu de JavaScript pour rendre le tout visuellement plus&amp;hellip; dynamique ?! Bref, une période de découverte riche en casse tête et en satisfaction, que j&amp;rsquo;ai malheureusement dû mettre de côté, suite à &amp;ldquo;les choses de la vie&amp;rdquo;, toussa toussa.&lt;/p&gt;
+&lt;h3 id="here-we-go-tout-court"&gt;Here we go tout court&lt;/h3&gt;
+&lt;p&gt;L&amp;rsquo;entrée dans la &amp;ldquo;vie active&amp;rdquo; a été comme une énorme claque pour moi, vraiment pas prêt, vraiment pas engagé, vraiment pas motivé, je me suis perdu sur des chemins pavés d&amp;rsquo;embûches, de rencontres, d&amp;rsquo;expériences enrichissantes, de constructions et d&amp;rsquo;appréhensions de mes pensées, de partages et de remises en questions&amp;hellip; bonnes ou mauvaises, elles ont faits ce que je suis aujourd&amp;rsquo;hui.&lt;/p&gt;
+&lt;h3 id="après-la-pluie"&gt;Après la pluie&amp;hellip;&lt;/h3&gt;
+&lt;p&gt;J&amp;rsquo;ai fini par trouver un boulot à la FNAC, ce n&amp;rsquo;était pas idéal mais au moins je pouvais mettre à contribution le savoir accumulé depuis toutes ces années dans le domaine informatique, pour conseiller Mr et Mme tous le monde ou une entreprise dans la recherche de leurs besoins, me consolider sur les sujets que je pensais acquis, et appris bien plus que je ne l&amp;rsquo;espérait.
+Après plusieurs années dans le département informatique, j&amp;rsquo;ai eu l&amp;rsquo;opportunité de mettre en place le département téléphonie, secteur abandonné quelques années, puis réintroduit sous une autre forme : c&amp;rsquo;était l&amp;rsquo;avènement du smartphone et des forfaits sans engagement !
+J&amp;rsquo;ai fait grandir et j&amp;rsquo;ai maintenu ce département durant 2 ans, avant de me décider à passer à autre chose.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="retour-aux-sources"&gt;RETOUR AUX SOURCES&lt;/h2&gt;
+&lt;p&gt;Cette expérience FNAC m&amp;rsquo;a permis de renouer avec mes premières passions, vendre du matos pour finir par échanger avec les commerciaux des plus grandes marques sur les prochaines nouveautés a relancé mon envie de développer, il fallait que je repartes à zéro pour enfin faire de ma vie un terrain de jeu dans lequel je saurais me démarquer.&lt;/p&gt;
+&lt;h3 id="réinitialisation"&gt;Réinitialisation&lt;/h3&gt;
+&lt;p&gt;La reconversion professionnelle, ou comment faire un bon formatage afin de repartir sur un système sain et bien plus stable.
+Le FONGECIF est un organisme qui permet de suivre une formation certifiante afin de faciliter cette reconversion. Bingo.
+Les démarches ont été longues, surtout auprès de mon entreprise. Une fois le dossier accepté, tout s&amp;rsquo;est enchaîné, et j&amp;rsquo;ai pu intégrer un parcours de Concepteur Développeur Informatique, rien qu&amp;rsquo;ça !
+4 mois de cours intensif, 2 mois de stage pour valider les acquis.&lt;/p&gt;
+&lt;p&gt;Au programme :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Algo&lt;/li&gt;
+&lt;li&gt;HTML/CSS&lt;/li&gt;
+&lt;li&gt;JS&lt;/li&gt;
+&lt;li&gt;SQL (MySQL)&lt;/li&gt;
+&lt;li&gt;PHP POO puis Symfony&lt;/li&gt;
+&lt;li&gt;Java J2E (focus sur servlet)&lt;/li&gt;
+&lt;li&gt;Android&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="crashloopbackoff"&gt;CrashLoopBackOff&lt;/h3&gt;
+&lt;p&gt;Remise en question&lt;/p&gt;
+&lt;h3 id="openclassrooms"&gt;OpenClassrooms&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h2 id="brave-new-world"&gt;BRAVE NEW WORLD&lt;/h2&gt;
+&lt;h3 id="sixense-digital"&gt;Sixense Digital&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h2 id="dev-hops-"&gt;DEV-HOPS !&lt;/h2&gt;
+&lt;h3 id="faire-un-pont-pour-de-bon"&gt;Faire un pont, pour de bon&lt;/h3&gt;
+&lt;p&gt;Le lien interservice&lt;/p&gt;
+&lt;h3 id="canal-de-suez"&gt;Canal de Suez&lt;/h3&gt;
+&lt;h3 id="chef-dorchestre"&gt;Chef d&amp;rsquo;orchestre&lt;/h3&gt;
+&lt;hr&gt;</description></item></channel></rss>
