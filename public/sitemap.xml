@@ -2,53 +2,63 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.bencat.dev/tags/actions/</loc>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2022-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2022-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/p/cr%C3%A9er-une-ci/cd-compl%C3%A8te-avec-github-actions/</loc>
+    <lastmod>2022-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/devops/</loc>
+    <lastmod>2022-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/docker/</loc>
+    <lastmod>2022-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2022-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2022-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/p/docker-gestion-du-pid-1-avec-tini/</loc>
+    <lastmod>2022-03-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/actions/</loc>
     <lastmod>2021-08-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.bencat.dev/</loc>
+    <loc>http://localhost:1313/tags/cicd/</loc>
     <lastmod>2021-08-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.bencat.dev/categories/</loc>
+    <loc>http://localhost:1313/tags/devops/</loc>
     <lastmod>2021-08-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.bencat.dev/tags/cicd/</loc>
+    <loc>http://localhost:1313/p/lerna-avec-github-actions/</loc>
     <lastmod>2021-08-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.bencat.dev/tags/devops/</loc>
+    <loc>http://localhost:1313/categories/tutoriel/</loc>
     <lastmod>2021-08-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.bencat.dev/p/lerna-avec-github-actions/</loc>
-    <lastmod>2021-08-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.bencat.dev/post/</loc>
-    <lastmod>2021-08-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.bencat.dev/tags/</loc>
-    <lastmod>2021-08-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.bencat.dev/categories/tutoriel/</loc>
-    <lastmod>2021-08-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.bencat.dev/categories/annonce/</loc>
+    <loc>http://localhost:1313/categories/annonce/</loc>
     <lastmod>2021-08-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.bencat.dev/p/here-we-go-again/</loc>
+    <loc>http://localhost:1313/p/here-we-go-again/</loc>
     <lastmod>2021-08-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.bencat.dev/tags/lifestyle/</loc>
+    <loc>http://localhost:1313/tags/lifestyle/</loc>
     <lastmod>2021-08-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.bencat.dev/archives/</loc>
+    <loc>http://localhost:1313/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.bencat.dev/page/</loc>
+    <loc>http://localhost:1313/page/</loc>
     <lastmod>2020-10-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.bencat.dev/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2020-10-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.bencat.dev/search/</loc>
-  </url><url>
-    <loc>https://www.bencat.dev/categories/test/</loc>
+    <loc>http://localhost:1313/search/</loc>
   </url>
 </urlset>
