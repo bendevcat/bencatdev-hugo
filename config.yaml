@@ -1,7 +1,7 @@
 baseurl: https://www.bencat.dev
 languageCode: en-us
 theme: hugo-theme-stack
-title: benCat.dev
+title: bencat.dev
 
 # Theme i18n support
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn, es, de, nl, it
